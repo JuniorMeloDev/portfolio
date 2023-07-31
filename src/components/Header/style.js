@@ -23,7 +23,9 @@ export const Title = styled.div`
 export const NavLinks = styled.nav`
   display: flex;
   gap: 20px;
-  
+    a {
+      color:black;
+    }
 
   @media (max-width: 560px) {
     flex-direction: column;
@@ -44,7 +46,7 @@ export const NavLinks = styled.nav`
       display: flex;
       align-items: center;
       justify-content: space-around;
-      text-decoration: none;
+      color: black;
       
     }
   }
@@ -91,6 +93,9 @@ export const CloseSidebar = styled.div`
 
 export const ContentTitle = styled.div`
   text-align: end;
+    a {
+      color:black;
+    }
   
 `;
 

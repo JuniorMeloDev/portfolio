@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -57,3 +58,6 @@ export const TitleProject = styled.strong``;
 export const Url = styled.span``;
 
 export const Created_at = styled.span``;
+
+
+

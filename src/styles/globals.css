@@ -16,5 +16,6 @@ body {
 
 a, button {
   cursor: pointer;
-  text-decoration:none
+  text-decoration:none;
+
 }

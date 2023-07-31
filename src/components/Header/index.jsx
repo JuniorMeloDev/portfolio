@@ -18,12 +18,14 @@ export default function Header() {
     <Container>
       <Content>
         <ContentTitle>
-          <Title>
-            Junior Melo
-          </Title>
-          <SubTitle>
-            Portfolio Pessoal
-          </SubTitle>
+          <Link href='/'>
+            <Title>
+              Junior Melo
+            </Title>
+            <SubTitle>
+              Portfolio Pessoal
+            </SubTitle>
+          </Link>
         </ContentTitle>
         <Menu>
           <FaBars onClick={showSiderbar} />
