@@ -29,6 +29,7 @@ export const Infos = styled.div`
   text-align: start;
   width: 50%;
   display: grid;
+  color: white;
 
   @media (max-width: 760px) {
     width: 90%;
@@ -38,6 +39,7 @@ export const Infos = styled.div`
 export const Name = styled.span`
   font-size: 40px;
   font-weight: 500;
+
 
   @media (max-width: 760px) {
     font-size: 25px;
@@ -49,11 +51,12 @@ export const Function = styled.span`
   color: black;
   margin-bottom: 10px;
   font-weight: 500;
+  color: white;
 `;
 
 export const Intro = styled.span`
-  color: black;
   text-align: justify;
+  color: white;
 
   @media (max-width: 760px) {
     font-size: 15px;
@@ -67,7 +70,6 @@ export const LinkProjects = styled.button`
   justify-content: space-around;
   margin-top: 20px;
   font-weight: bold;
-
 
   svg {
     font-size: 20px;
@@ -83,15 +85,16 @@ export const Logo = styled.div`
   img {
     width: 17rem;
     height: 20rem;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
+    background-color: #87CEFA;
   }
 
   @media (max-width: 760px) {
     width: 90%;
-  
   }
 
-  @media (max-width: 600px) {
-
+  @media (max-width: 760px) {
     img {
       width: 11rem;
       height: 12rem;
@@ -99,4 +102,4 @@ export const Logo = styled.div`
   }
 `;
 
-export const Img = styled.img``
+export const Img = styled.img``;

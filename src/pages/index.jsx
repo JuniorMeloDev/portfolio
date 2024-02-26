@@ -12,10 +12,10 @@ export default function Home() {
       <Content>
         <Infos>
           <Name>Olá, sou o Junior Melo!</Name>
-          <Function>Estudante de Tecnologia</Function>
-          <Intro>Estou no 5º período da Graduação em Análise e Desenvolvimento de Sistemas.
+          <Function>Graduado em TI.</Function>
+          <Intro>Sou Graduado em Análise e Desenvolvimento de Sistemas pela Universidade Tiradentes de Pernambuco.
             Tenho experiências acadêmicas na área de desenvolvimento Web
-            (React, NextJs, JS e outros), Back-End com Java e Spring Boot. Em busca da primeira oportunidade.
+            (React, NextJs, JS, HTML e CSS) e Back-End com Java e Spring Boot.
           </Intro>
           <Link className={styles.link} href="projects">
             <LinkProjects>PROJETOS <FaArrowRight /></LinkProjects>

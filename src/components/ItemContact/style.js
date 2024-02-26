@@ -25,7 +25,7 @@ export const Icon = styled.div`
 `;
 
 export const Text = styled.div`
-  color: black;
+  color: white;
   text-align: start;
   
 `;
