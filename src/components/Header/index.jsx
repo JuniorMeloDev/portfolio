@@ -33,13 +33,16 @@ export default function Header() {
         <NavLinks sidebar={sidebar}>
           <CloseSidebar onClick={showSiderbar}><FaTimes /></CloseSidebar>
           <Link href="/">
-            <Ancora className={activeLink('')} onClick={showSiderbar}>Home</Ancora>
+            <Ancora className={activeLink('')} onClick={showSiderbar}>Sobre Mim</Ancora>
           </Link>
-          <Link href="projects">
-            <Ancora className={activeLink('projects')} onClick={showSiderbar}>Projetos</Ancora>
+          <Link href="curriculo">
+            <Ancora className={activeLink('curriculo')} onClick={showSiderbar}>Currículo</Ancora>
           </Link>
-          <Link href="contact">
-            <Ancora className={activeLink('contact')} onClick={showSiderbar}>Contato</Ancora>
+          <Link href="projetos">
+            <Ancora className={activeLink('projetos')} onClick={showSiderbar}>Projetos TI</Ancora>
+          </Link>
+          <Link href="contato">
+            <Ancora className={activeLink('contato')} onClick={showSiderbar}>Contato</Ancora>
           </Link>
         </NavLinks>
       </Content>

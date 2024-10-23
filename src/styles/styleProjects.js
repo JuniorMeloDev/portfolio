@@ -46,18 +46,20 @@ export const Li = styled.li`
   gap: 5px;
   border-radius: 10px;
   padding: 10px;
+  background-color: white; /* Fundo branco adicionado */
+  color: black;
 
   @media (max-width: 760px) {
     font-size: 13px;
   }
 `;
 
- export const StyledLink = styled.a`
-  color: #00799d; 
-  text-decoration: none; 
-  transition: color 0.3s ease; 
+export const StyledLink = styled.a`
+  color: #00799d;
+  text-decoration: none;
+  transition: color 0.3s ease;
   &:hover {
-    color: red; 
+    color: red;
   }
 `;
 

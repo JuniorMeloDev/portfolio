@@ -1,9 +1,8 @@
-import React from 'react'
-import { Container, Content } from '../../styles/styleContact'
-import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
-import ItemContact from '../../components/ItemContact'
-import Link from 'next/link'
-
+import React from 'react';
+import { Container, Content } from '../../styles/styleContact'; // Verifique o caminho
+import { FaLinkedin, FaEnvelope, FaGithub, FaPhone } from 'react-icons/fa';
+import ItemContact from '../../components/ItemContact';
+import Link from 'next/link';
 
 export default function Contact() {
   return (
@@ -27,7 +26,13 @@ export default function Contact() {
             LinkContact="juninhotj_@hotmail.com"
           />
         </Link>
+        <Link href='https://wa.me/5581987068245'>
+          <ItemContact
+            IconFa={FaPhone}
+            LinkContact="(81) 98706-8245"
+          />
+        </Link>
       </Content>
     </Container>
-  )
+  );
 }

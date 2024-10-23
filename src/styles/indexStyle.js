@@ -18,7 +18,7 @@ export const Content = styled.div`
   @media (max-width: 600px) {
     padding: 5px;
   }
-  
+
   @media (max-width: 760px) {
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -40,7 +40,6 @@ export const Name = styled.span`
   font-size: 40px;
   font-weight: 500;
 
-
   @media (max-width: 760px) {
     font-size: 25px;
     text-align: center;
@@ -58,6 +57,9 @@ export const Intro = styled.span`
   text-align: justify;
   color: white;
 
+  p {
+    padding: 10px;
+  }
   @media (max-width: 760px) {
     font-size: 15px;
   }
@@ -87,7 +89,7 @@ export const Logo = styled.div`
     height: 20rem;
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(1, 1, 1, 1);
-    background-color: #87CEFA;
+    background-color: #87cefa;
   }
 
   @media (max-width: 760px) {
