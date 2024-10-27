@@ -15,13 +15,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: black; /* Cor de fundo */
+  background-color:  #d4f1f4; /* Cor de fundo */
   flex-grow: 1; /* Isso vai ajudar a preencher o espaço disponível na tela */
 `;
 
 export const H2 = styled.div`
   margin-bottom: 30px;
   text-align: center;
+  color: black;
 `;
 
 export const Content = styled.div`
@@ -108,35 +109,34 @@ export const HabilityColumn = styled.div`
   font-size: 1em;
   color: #555;
   line-height: 1.6;
-  width: auto; /* Deixa o card se ajustar ao conteúdo */
-  min-width: 400px; /* Define um valor mínimo de largura para garantir consistência visual */
-  flex-grow: 1; /* Permite que os cards cresçam igualmente se houver espaço */
+  width: auto;
+  min-width: 400px;
+  flex-grow: 1;
 
   ul {
-    list-style-type: none; /* Remove os pontos da lista */
-    padding: 0; /* Remove o espaçamento padrão à esquerda */
-    margin: 0; /* Remove as margens padrão */
-    display: grid; /* Define o layout de grid */
-    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
-    gap: 10px; /* Adiciona um espaçamento entre os itens */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Layout de duas colunas */
+    gap: 10px;
   }
 
   li {
-    margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
-    position: relative; /* Necessário para posicionar o quadrado */
-    padding-left: 25px; /* Espaço para o quadrado */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
   }
 
-  /* Estilo para o quadrado azul antes de cada item */
   li::before {
-    content: ''; /* Garante que o elemento seja exibido */
+    content: '';
     position: absolute;
-    left: 0; /* Posição à esquerda do item */
+    left: 0;
     top: 0;
     width: 15px;
     height: 15px;
-    background-color: #007bff; /* Cor azul */
-    border-radius: 3px; /* Deixa as bordas levemente arredondadas, ou remova se quiser bordas 100% quadradas */
+    background-color: #007bff;
+    border-radius: 3px;
   }
 
   h3 {
@@ -149,4 +149,15 @@ export const HabilityColumn = styled.div`
     color: #333;
     margin: 5px 0;
   }
+
+  /* Ajustes para telas menores */
+  @media (max-width: 600px) {
+    min-width: 100%; /* Garante que o card ocupe toda a largura */
+    
+    ul {
+      grid-template-columns: 1fr; /* Muda para uma coluna */
+    }
+  }
 `;
+
+

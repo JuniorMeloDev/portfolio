@@ -31,7 +31,8 @@ export default function Header() {
           <FaBars onClick={showSiderbar} />
         </Menu>
         <NavLinks sidebar={sidebar}>
-          <CloseSidebar onClick={showSiderbar}><FaTimes /></CloseSidebar>
+          {/* Passar o estado sidebar para controlar a visibilidade do ícone 'X' */}
+          <CloseSidebar sidebar={sidebar} onClick={showSiderbar}><FaTimes /></CloseSidebar>
           <Link href="/">
             <Ancora className={activeLink('')} onClick={showSiderbar}>Sobre Mim</Ancora>
           </Link>
